@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "museoJadeApp",
+    "slug": "museoJadeApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "museoJadeApp"
+}
