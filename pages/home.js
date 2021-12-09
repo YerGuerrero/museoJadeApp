@@ -11,25 +11,6 @@ class Home extends React.Component {
         this.state = null;
     }
 
-    fetchTour() {
-        fetch('http://192.168.88.15:5000/read_tours')
-            .then(response => response.json())
-            .then(result => {
-                this.setState({
-                    data: result.map(item => ({
-                        id: item[0],
-                        title: item[1],
-                        description: item[2],
-                        urltour: item[3],
-                        image: item[4],
-                    }))
-                });
-            }).catch(function(error){console.log(error)})
-    }
-
-    componentDidMount() {
-        this.fetchTour(); 
-    }
 
     render(){
         return (
